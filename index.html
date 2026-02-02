@@ -1,56 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Simple Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Isaac David Porogi Foundation</title>
   <style>
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #0b2e59;
+      padding: 15px;
+      color: white;
+    }
+    header nav ul {
+      list-style: none;
       margin: 0;
       padding: 0;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
     }
-    h1 {
-      background-color: lightgreen;
-      color: yellow;
-      padding: 20px;
-      text-align: center;
+    header nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
     }
-    p {
-      font-family: "Times New Roman"
-      color: red;
+    header nav a:hover {
+      text-decoration: underline;
     }
-    .container {
-      max-width: 800px;
-      margin: 40px auto;
+    .main-section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .donate-btn {
+      display: inline-block;
+      padding: 12px 22px;
+      background: #0b2e59;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+    .donate-btn:hover {
+      background: #093051;
+    }
+    .scholarships li {
+      border-left: 4px solid #0b2e59;
+      margin-bottom: 8px;
+      padding: 8px;
       background: white;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
-    img {
-      max-width: 100%;
-      border-radius: 8px;
-      margin-top: 20px;
+    footer {
+      background: #0b2e59;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
 
+  <!-- Navigation -->
   <header>
-    <h1>Welcome to My Website</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#get-involved">Get Involved</a></li>
+        <li><a href="#donate">Donate</a></li>
+        <li><a href="#blog">Blog</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <div class="container">
+  <!-- Main Content -->
+  <section class="main-section" id="about">
+    <h2>Support Pediatric Cancer</h2>
+    <h3>Mission Statement</h3>
     <p>
-      This is a simple website this is just for practice.
+      Our mission is to raise money to help find a cure for osteosarcoma and other pediatric cancers,
+      to award academic scholarships for youth who have been affected by pediatric cancer,
+      and provide funding for families currently going through pediatric cancer journeys.
     </p>
-    <p>I'm just <strong><em>Practicing and learning what all I can do!</em></strong></p>
-    <a href="https://www.isaacdavidporogi.org/"> Isaac David Porogi Foundation </a>
+  </section>
 
-    <img src="https://media.istockphoto.com/id/1420583594/vector/basketball-basketball-icon-flat-image-on-a-white-background.jpg?s=612x612&w=0&k=20&c=N5ptziACMcnm4ppgnVtTDayR4AH5jy6cOa4loLIh6GA=" alt="Sample image" />
-  </div>
+  <section class="main-section" id="donate">
+    <h3>Donate</h3>
+    <p>
+      We accept donations using debit, credit, or your PayPal account. All online donations go through PayPal.
+      Just click the button below — you can make a one-time payment or set up a monthly donation.
+      Our EIN # (needed for tax purposes) will be on the PayPal page once you click donate.
+    </p>
+
+    <!-- TODO: need to add PayPal link at # -->
+    <a href="#" class="donate-btn">Donate via PayPal</a>
+  </section>
+
+  <section class="main-section" id="scholarships">
+    <h3>$1,000 Scholarship Winners</h3>
+    <ul class="scholarships">
+      <li>Alana Cook (Columbus, IN — 2021)</li>
+      <li>Evelyn Kowalski (John Glenn — 2021)</li>
+      <li>Kody Combs (Knox, IN — 2022)</li>
+      <li>Morgan Tibbs (John Glenn — 2022)</li>
+      <li>William Aberegg Jr (South Bend, IN — 2023)</li>
+      <li>Owen Packer (John Glenn — 2023)</li>
+      <li>Kylie Reed (Nappanee, IN — 2024)</li>
+      <li>Theodosia Kogiones (John Glenn — 2025)</li>
+    </ul>
+  </section>
+
+  <!-- Contact Info -->
+  <section class="main-section" id="contact">
+    <h3>Contact</h3>
+    <p>Email: <a href="mailto:isaacdavidporogi@yahoo.com">isaacdavidporogi@yahoo.com</a></p>
+    <p>Find us: Walkerton, IN 46574</p>
+    <p>Follow us on <a href="#">Facebook</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2026 Isaac David Porogi Foundation
+  </footer>
 
 </body>
 </html>
