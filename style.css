@@ -7,8 +7,9 @@ body {
 }
 
 header {
+  text-align: center;
   background: yellow;
-  padding: 15px 20px;
+  padding: 20px 0px;
 }
 
 header h1 {
@@ -22,6 +23,7 @@ nav ul {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 nav a {
