@@ -39,13 +39,21 @@ nav a:hover {
 .container {
   text-align: center;
   max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #f4f8fb;      /* soft, calm background */
+  border-radius: 12px;      /* rounded corners */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.container h3 {
+  margin-bottom: 15px;
 }
 
 .container p {
   text-align: center;
-  line-height: 1.6;
+  line-height: 1.7;
+  font-size: 18px;
 }
 
 .hero {
