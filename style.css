@@ -66,6 +66,32 @@ nav a:hover {
   background: #093051;
 }
 
+.Winners {
+  text-align: center;
+  margin: 40px auto;
+}
+
+.Winners h3 {
+  margin-bottom: 20px;
+}
+
+.winner-list {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.winner-list li {
+  background: #f5f5f5;
+  margin: 10px 0;
+  padding: 12px 18px;
+  border-radius: 8px;
+  text-align: left;
+  font-size: 18px;
+}
+
+
 ul.list li {
   background: white;
   margin-bottom: 10px;
