@@ -72,8 +72,8 @@ nav a:hover {
 .hero-image {
   display: block;
   margin: 0 auto 20px auto;
-  width: 100%;        /* makes image fill hero width */
-  max-width: 700px;   /* keeps it from getting too big */
+  width: 100%;        
+  max-width: none;   
   height: auto;
 }
 
