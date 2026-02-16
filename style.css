@@ -627,6 +627,59 @@ footer {
 /*end of donate section*/
 
 /*Trials and Resources */
+.Trials-and-Resources {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+/* Section heading */
+.Trials-and-Resources h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #003366;
+}
+
+/* Paragraph styling */
+.Trials-and-Resources p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Link styling */
+.Trials-and-Resources a {
+  color: #0055a5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.Trials-and-Resources a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  .Trials-and-Resources h2 {
+    font-size: 1.5em;
+  }
+
+  .Trials-and-Resources p {
+    font-size: 1em;
+  }
+
+  nav li {
+    margin: 5px;
+  }
+}
 
 /*end of Trials and Resources section */
 
