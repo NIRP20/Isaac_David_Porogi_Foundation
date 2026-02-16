@@ -627,69 +627,7 @@ footer {
 /*end of donate section*/
 
 /*Trials and Resources */
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f5f8fa; /* light, neutral background */
-  color: #1a1a1a; /* dark text for readability */
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center; /* center horizontally */
-  align-items: center;     /* center vertically */
-  min-height: 100vh;       /* full screen height */
-  text-align: center;      /* center text */
-}
 
-/* Main container */
-main {
-  background-color: #ffffff;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  max-width: 800px;
-  width: 90%; /* responsive width */
-  box-sizing: border-box;
-}
-
-/* Headings */
-h1 {
-  font-size: 2em;
-  margin-bottom: 20px;
-  color: #003366; /* dark blue heading */
-}
-
-/* Paragraphs */
-p {
-  font-size: 1.1em;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-/* Links */
-a {
-  color: #0055a5; /* blue links */
-  text-decoration: none;
-  font-weight: bold;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Responsive adjustments */
-@media (max-width: 600px) {
-  h1 {
-    font-size: 1.5em;
-  }
-
-  p {
-    font-size: 1em;
-  }
-
-  main {
-    padding: 20px;
-  }
-}
 /*end of Trials and Resources section */
 
 ul.list li {
