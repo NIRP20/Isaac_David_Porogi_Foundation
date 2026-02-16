@@ -121,7 +121,95 @@ nav a:hover {
   max-width: 800px;
   margin: 0 auto;
 }
-  
+
+/* Container styling */
+.get-involved {
+  max-width: 90%;          /* scales with screen size */
+  margin: 40px auto;       /* centered */
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;  /* ensures padding doesn't break width */
+}
+
+/* Headings */
+.get-involved h2 {
+  font-size: 2rem;         /* scales naturally on desktop */
+  margin-bottom: 15px;
+}
+
+/* Paragraphs */
+.get-involved p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* List styling */
+.get-involved ul {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+  line-height: 1.8;
+}
+
+/* List items */
+.get-involved li {
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+/* Volunteer button */
+.volunteer-button {
+  display: inline-block;
+  margin: 20px auto;
+  padding: 14px 24px;
+  background-color: #2c6e49;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.volunteer-button:hover {
+  background-color: #245338; /* subtle hover effect */
+}
+
+/* Responsive adjustments */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .get-involved h2 {
+    font-size: 1.7rem;
+  }
+
+  .get-involved p,
+  .get-involved li {
+    font-size: 0.95rem;
+  }
+
+  .volunteer-button {
+    padding: 12px 20px;
+  }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  .get-involved h2 {
+    font-size: 1.5rem;
+  }
+
+  .get-involved p,
+  .get-involved li {
+    font-size: 0.9rem;
+  }
+
+  .volunteer-button {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+}
+
 
 ul.list li {
   background: white;
