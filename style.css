@@ -401,6 +401,70 @@ footer {
   }
 }
 
+/* about us section */
+/* ===== About Us Section ===== */
+.About_Us {
+  text-align: center;
+  width: 95%;             /* scales with screen size */
+  max-width: 800px;       /* caps the width on desktop */
+  margin: 40px auto;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.About_Us img {
+  display: block;
+  margin: 0 auto 30px auto; /* centers image with spacing below */
+  width: 100%;               /* image fills container */
+  max-width: 923px;          /* original image width */
+  height: auto;
+  border-radius: 12px;       /* optional: rounded corners for style */
+}
+
+.About_Us h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.About_Us p {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+/* ===== Responsive Media Queries ===== */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .About_Us h2 {
+    font-size: 1.7rem;
+  }
+
+  .About_Us p {
+    font-size: 0.95rem;
+  }
+
+  .About_Us img {
+    max-width: 90%;
+  }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  .About_Us h2 {
+    font-size: 1.5rem;
+  }
+
+  .About_Us p {
+    font-size: 0.9rem;
+  }
+
+  .About_Us img {
+    max-width: 100%;
+  }
+}
+/* end of About Us */
 
 ul.list li {
   background: white;
