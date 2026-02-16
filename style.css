@@ -58,8 +58,10 @@ nav a:hover {
 
 .hero {
   background: white;
-  padding: 60px 20px;
   text-align: center;
+  max-width: 800px;
+  margin: 20px auto;
+  line-height: 1.6;
 }
 
 .hero h2 {
