@@ -553,12 +553,12 @@ footer {
 
 /* ===== Donate Page ===== */
 .donate-container {
-  text-align: center;
-  width: 95%;             /* scales with screen size */
-  max-width: 900px;       /* caps width on desktop */
-  margin: 40px auto;
+  text-align: center;         /* keeps everything centered */
+  width: 95%;                 /* scales with screen size */
+  max-width: 800px;           /* caps width on desktop */
+  margin: 40px auto;          /* centers the container */
   padding: 30px 20px;
-  background: #f4f8fb;    /* consistent with other containers */
+  background: #f4f8fb;        /* matches other containers */
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   box-sizing: border-box;
@@ -566,24 +566,25 @@ footer {
 
 .donate-container h2 {
   font-size: 2rem;
-  margin-bottom: 15px;
+  margin-bottom: 20px;        /* more space under heading */
 }
 
 .donate-container p {
   font-size: 1rem;
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin-bottom: 25px;        /* space between text and button */
 }
 
 .donate-container .button {
   display: inline-block;
-  padding: 14px 24px;
-  background-color: #d62828; /* matches homepage Donate button hover style */
+  padding: 14px 28px;          /* slightly wider for button */
+  background-color: #d62828;   
   color: white;
   text-decoration: none;
   border-radius: 6px;
   font-weight: bold;
   transition: background 0.3s ease;
+  text-align: center;           /* ensures text stays centered inside button */
 }
 
 .donate-container .button:hover {
@@ -603,7 +604,7 @@ footer {
   }
 
   .donate-container .button {
-    padding: 12px 20px;
+    padding: 12px 24px;
     font-size: 0.95rem;
   }
 }
@@ -619,11 +620,11 @@ footer {
   }
 
   .donate-container .button {
-    padding: 10px 16px;
+    padding: 10px 20px;
     font-size: 0.9rem;
   }
 }
-/* end of donate section */
+/*end of donate section*/
 
 ul.list li {
   background: white;
