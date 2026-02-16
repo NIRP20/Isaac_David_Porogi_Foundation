@@ -551,6 +551,80 @@ footer {
 }
 /* end of events section */
 
+/* ===== Donate Page ===== */
+.donate-container {
+  text-align: center;
+  width: 95%;             /* scales with screen size */
+  max-width: 900px;       /* caps width on desktop */
+  margin: 40px auto;
+  padding: 30px 20px;
+  background: #f4f8fb;    /* consistent with other containers */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-sizing: border-box;
+}
+
+.donate-container h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.donate-container p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.donate-container .button {
+  display: inline-block;
+  padding: 14px 24px;
+  background-color: #d62828; /* matches homepage Donate button hover style */
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.donate-container .button:hover {
+  background-color: #b21f1f;
+}
+
+/* ===== Responsive Media Queries ===== */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .donate-container h2 {
+    font-size: 1.7rem;
+  }
+
+  .donate-container p {
+    font-size: 0.95rem;
+  }
+
+  .donate-container .button {
+    padding: 12px 20px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  .donate-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .donate-container p {
+    font-size: 0.9rem;
+  }
+
+  .donate-container .button {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+}
+/* end of donate section */
+
 ul.list li {
   background: white;
   margin-bottom: 10px;
