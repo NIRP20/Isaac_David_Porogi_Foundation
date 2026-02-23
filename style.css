@@ -1,11 +1,18 @@
-/* Global Styles */
+/* =====================
+   Global Styles
+===================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background-color: white;
   color: black;
-  line-height: 1.6;
-  box-sizing: border-box;
+  line-height: 1.5; /* REQUIRED 1.5 line spacing */
 }
 
 h1, h2, h3 {
@@ -22,7 +29,9 @@ ul {
   list-style: none;
 }
 
-/*Header */
+/* =====================
+   Header
+===================== */
 header {
   text-align: center;
   background: yellow;
@@ -30,9 +39,7 @@ header {
 }
 
 header h1 {
-  color: black;
   font-size: 2rem;
-  margin-bottom: 10px;
 }
 
 nav ul {
@@ -40,8 +47,6 @@ nav ul {
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
-  padding: 0;
-  margin: 0;
 }
 
 nav a {
@@ -49,16 +54,16 @@ nav a {
   text-decoration: none;
   font-weight: bold;
   padding: 6px 10px;
-  transition: color 0.3s;
 }
 
 nav a:hover {
   text-decoration: underline;
 }
 
-/*Hero Section */
+/* =====================
+   Hero Section
+===================== */
 .hero {
-  background: white;
   text-align: center;
   width: 95%;
   max-width: 1000px;
@@ -68,20 +73,18 @@ nav a:hover {
 
 .hero-image {
   display: block;
-  margin: 0 auto 20px auto;
+  margin: 0 auto 20px;
   width: 100%;
-  max-width: 1000px; /* image can grow larger on desktop */
+  max-width: 1000px;
   height: auto;
 }
 
 .hero h2 {
   font-size: 2.2rem;
-  margin-bottom: 10px;
 }
 
 .hero p {
   font-size: 1rem;
-  margin-bottom: 15px;
 }
 
 .button {
@@ -92,38 +95,42 @@ nav a:hover {
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
-  margin: 10px 0;
-  transition: background 0.3s ease;
 }
 
 .button:hover {
   background: #093051;
 }
 
-/*Container Sections*/
-.container {
+/* =====================
+   Containers
+===================== */
+.container,
+.blog-container,
+.events-container,
+.donate-container {
   text-align: center;
   width: 95%;
   max-width: 900px;
   margin: 40px auto;
-  padding: 20px;
+  padding: 30px 20px;
   background: #f4f8fb;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-.container h3 {
-  margin-bottom: 15px;
-}
-
-.container p {
+.container p,
+.blog-container p,
+.events-container p,
+.donate-container p {
   font-size: 1rem;
-  line-height: 1.7;
 }
 
-/* Content Images */
+/* =====================
+   Images
+===================== */
 .container img,
-.bottom-image {
+.bottom-image,
+.About_Us img {
   display: block;
   margin: 20px auto;
   width: 100%;
@@ -131,24 +138,14 @@ nav a:hover {
   height: auto;
 }
 
-/*Winners Section */
+/* =====================
+   Winners Section
+===================== */
 .Winners {
   text-align: center;
   width: 95%;
   max-width: 900px;
   margin: 40px auto;
-  padding: 20px;
-}
-
-.Winners h3 {
-  margin-bottom: 15px;
-}
-
-.winner-list {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  max-width: 600px;
 }
 
 .winner-list li {
@@ -157,18 +154,30 @@ nav a:hover {
   padding: 12px 18px;
   border-radius: 8px;
   text-align: left;
-  font-size: 1rem;
 }
 
-/*About Us Section*/
+/* =====================
+   About Us
+===================== */
 .About_Us {
   text-align: center;
   width: 95%;
   max-width: 800px;
   margin: 40px auto;
+  padding: 40px 20px;
 }
 
-/*Get Involved Section */
+.About_Us h2 {
+  font-size: 2rem;
+}
+
+.About_Us p {
+  font-size: 1rem;
+}
+
+/* =====================
+   Get Involved
+===================== */
 .get-involved {
   width: 95%;
   max-width: 900px;
@@ -177,523 +186,67 @@ nav a:hover {
   text-align: center;
 }
 
-.get-involved h2 {
-  font-size: 2rem;
-  margin-bottom: 15px;
-}
-
-.get-involved p {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
 .get-involved ul {
-  list-style: none;
-  padding: 0;
   margin: 30px 0;
-  line-height: 1.8;
 }
 
 .get-involved li {
   margin-bottom: 12px;
-  font-size: 1rem;
 }
 
 .volunteer-button {
   display: inline-block;
-  margin: 20px auto;
   padding: 14px 24px;
   background-color: #2c6e49;
   color: white;
   text-decoration: none;
   border-radius: 6px;
   font-weight: bold;
-  transition: background 0.3s ease;
 }
 
 .volunteer-button:hover {
   background-color: #245338;
 }
 
-/*List styling (other lists) */
-ul.list li {
-  background: white;
-  margin-bottom: 10px;
-  padding: 12px;
-  border-left: 5px solid #0b2e59;
-}
-
-/*Footer*/
+/* =====================
+   Footer
+===================== */
 footer {
   background: yellow;
-  color: black;
   text-align: center;
   padding: 25px 15px;
   font-size: 0.9rem;
 }
 
-/*Responsive Media Queries */
-
-/* Tablets */
+/* =====================
+   Responsive Design
+===================== */
 @media (max-width: 768px) {
   header h1 {
     font-size: 1.7rem;
-  }
-
-  nav ul {
-    gap: 10px;
   }
 
   .hero h2 {
     font-size: 1.8rem;
   }
 
-  .hero p,
-  .container p,
-  .Winners li,
-  .get-involved p,
-  .get-involved li {
+  p,
+  li {
     font-size: 0.95rem;
-  }
-
-  .button,
-  .volunteer-button {
-    padding: 12px 20px;
-    font-size: 0.95rem;
-  }
-
-  .container img,
-  .hero-image,
-  .bottom-image {
-    max-width: 90%;
   }
 }
 
-/* Phones */
 @media (max-width: 480px) {
   header h1 {
     font-size: 1.4rem;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 8px;
   }
 
   .hero h2 {
     font-size: 1.5rem;
   }
 
-  .hero p,
-  .container p,
-  .Winners li,
-  .get-involved p,
-  .get-involved li {
-    font-size: 0.9rem;
-  }
-
-  .button,
-  .volunteer-button {
-    padding: 10px 16px;
-    font-size: 0.9rem;
-  }
-
-  .container img,
-  .hero-image,
-  .bottom-image {
-    max-width: 100%;
-  }
-}
-
-
-.About_Us {
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-/* Container styling */
-.get-involved {
-  max-width: 90%;          /* scales with screen size */
-  margin: 40px auto;       /* centered */
-  padding: 20px;
-  text-align: center;
-  box-sizing: border-box;  /* ensures padding doesn't break width */
-}
-
-/* Headings */
-.get-involved h2 {
-  font-size: 2rem;         /* scales naturally on desktop */
-  margin-bottom: 15px;
-}
-
-/* Paragraphs */
-.get-involved p {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-/* List styling */
-.get-involved ul {
-  list-style: none;
-  padding: 0;
-  margin: 30px 0;
-  line-height: 1.8;
-}
-
-/* List items */
-.get-involved li {
-  margin-bottom: 12px;
-  font-size: 1rem;
-}
-
-/* Volunteer button */
-.volunteer-button {
-  display: inline-block;
-  margin: 20px auto;
-  padding: 14px 24px;
-  background-color: #2c6e49;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-  transition: background 0.3s ease;
-}
-
-.volunteer-button:hover {
-  background-color: #245338; /* subtle hover effect */
-}
-
-/* Responsive adjustments */
-
-/* Tablets */
-@media (max-width: 768px) {
-  .get-involved h2 {
-    font-size: 1.7rem;
-  }
-
-  .get-involved p,
-  .get-involved li {
-    font-size: 0.95rem;
-  }
-
-  .volunteer-button {
-    padding: 12px 20px;
-  }
-}
-
-/* Phones */
-@media (max-width: 480px) {
-  .get-involved h2 {
-    font-size: 1.5rem;
-  }
-
-  .get-involved p,
-  .get-involved li {
-    font-size: 0.9rem;
-  }
-
-  .volunteer-button {
-    padding: 10px 16px;
+  p,
+  li {
     font-size: 0.9rem;
   }
 }
-
-/* about us section */
-/* About Us Section*/
-.About_Us {
-  text-align: center;
-  width: 95%;             /* scales with screen size */
-  max-width: 800px;       /* caps the width on desktop */
-  margin: 40px auto;
-  padding: 40px 20px;
-  box-sizing: border-box;
-}
-
-.About_Us img {
-  display: block;
-  margin: 0 auto 30px auto; /* centers image with spacing below */
-  width: 100%;               /* image fills container */
-  max-width: 923px;          /* original image width */
-  height: auto;
-  border-radius: 12px;       /* optional: rounded corners for style */
-}
-
-.About_Us h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.About_Us p {
-  font-size: 1rem;
-  line-height: 1.6;
-  text-align: center;
-  margin-bottom: 0;
-}
-
-/* Responsive Media Queries*/
-
-/* Tablets */
-@media (max-width: 768px) {
-  .About_Us h2 {
-    font-size: 1.7rem;
-  }
-
-  .About_Us p {
-    font-size: 0.95rem;
-  }
-
-  .About_Us img {
-    max-width: 90%;
-  }
-}
-
-/* Phones */
-@media (max-width: 480px) {
-  .About_Us h2 {
-    font-size: 1.5rem;
-  }
-
-  .About_Us p {
-    font-size: 0.9rem;
-  }
-
-  .About_Us img {
-    max-width: 100%;
-  }
-}
-/* end of About Us */
-
-/* Blog Page */
-.blog-container {
-  text-align: center;
-  width: 95%;             /* scales with screen size */
-  max-width: 900px;       /* caps width on desktop */
-  margin: 40px auto;
-  padding: 30px 20px;
-  background: #f4f8fb;    /* consistent with other containers */
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  box-sizing: border-box;
-}
-
-.blog-container p {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 0;
-}
-
-/* Responsive Media Queries */
-
-/* Tablets */
-@media (max-width: 768px) {
-  .blog-container p {
-    font-size: 0.95rem;
-  }
-}
-
-/* Phones */
-@media (max-width: 480px) {
-  .blog-container p {
-    font-size: 0.9rem;
-  }
-}
-/* end of Blog section */
-
-/*Events Page*/
-.events-container {
-  text-align: center;
-  width: 95%;             /* scales with screen size */
-  max-width: 900px;       /* caps width on desktop */
-  margin: 40px auto;
-  padding: 30px 20px;
-  background: #f4f8fb;    /* consistent with other containers */
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  box-sizing: border-box;
-}
-
-.events-container h2 {
-  font-size: 2rem;
-  margin-bottom: 15px;
-}
-
-.events-container p {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 0;
-}
-
-/*Responsive Media Queries*/
-
-/* Tablets */
-@media (max-width: 768px) {
-  .events-container h2 {
-    font-size: 1.7rem;
-  }
-
-  .events-container p {
-    font-size: 0.95rem;
-  }
-}
-
-/* Phones */
-@media (max-width: 480px) {
-  .events-container h2 {
-    font-size: 1.5rem;
-  }
-
-  .events-container p {
-    font-size: 0.9rem;
-  }
-}
-/* end of events section */
-
-/* Donate Page */
-.donate-container {
-  text-align: center;         /* keeps everything centered */
-  width: 95%;                 /* scales with screen size */
-  max-width: 800px;           /* caps width on desktop */
-  margin: 40px auto;          /* centers the container */
-  padding: 30px 20px;
-  background: #f4f8fb;        /* matches other containers */
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  box-sizing: border-box;
-}
-
-.donate-container h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;        /* more space under heading */
-}
-
-.donate-container p {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 25px;        /* space between text and button */
-}
-
-.donate-container .button {
-  display: inline-block;
-  padding: 14px 28px;          /* slightly wider for button */
-  background-color: yellow;   
-  color: black;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-  transition: background 0.3s ease;
-  text-align: center;           /* ensures text stays centered inside button */
-}
-
-.donate-container .button:hover {
-  background-color: darkblue;
-}
-
-/* Responsive Media Queries */
-
-/* Tablets */
-@media (max-width: 768px) {
-  .donate-container h2 {
-    font-size: 1.7rem;
-  }
-
-  .donate-container p {
-    font-size: 0.95rem;
-  }
-
-  .donate-container .button {
-    padding: 12px 24px;
-    font-size: 0.95rem;
-  }
-}
-
-/* Phones */
-@media (max-width: 480px) {
-  .donate-container h2 {
-    font-size: 1.5rem;
-  }
-
-  .donate-container p {
-    font-size: 0.9rem;
-  }
-
-  .donate-container .button {
-    padding: 10px 20px;
-    font-size: 0.9rem;
-  }
-}
-/*end of donate section*/
-
-/*Trials and Resources */
-.Trials-and-Resources {
-  max-width: 800px;
-  margin: 40px auto;
-  background-color: #ffffff;
-  padding: 30px 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
-}
-
-/* Section heading */
-.Trials-and-Resources h2 {
-  font-size: 1.8em;
-  margin-bottom: 20px;
-  color: #003366;
-}
-
-/* Paragraph styling */
-.Trials-and-Resources p {
-  font-size: 1.1em;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-/* Link styling */
-.Trials-and-Resources a {
-  color: #0055a5;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.Trials-and-Resources a:hover {
-  text-decoration: underline;
-}
-
-/* Responsive design */
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 1.5em;
-  }
-
-  .Trials-and-Resources h2 {
-    font-size: 1.5em;
-  }
-
-  .Trials-and-Resources p {
-    font-size: 1em;
-  }
-
-  nav li {
-    margin: 5px;
-  }
-}
-
-/*end of Trials and Resources section */
-
-ul.list li {
-  background: white;
-  margin-bottom: 10px;
-  padding: 12px;
-  border-left: 5px solid #0b2e59;
-}
-
-footer {
-  background: yellow;
-  color: black;
-  text-align: center;
-  padding: 25px 15px;
-}
-
