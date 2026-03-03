@@ -2,48 +2,77 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>About Us</title>
+  <title>Get Involved | Isaac David Porogi Foundation</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Get involved with the Isaac David Porogi Foundation by volunteering, donating, or requesting information." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- External CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
-  <h1>About the Foundation</h1>
+  <h1>Isaac David Porogi Foundation</h1>
   <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="get-involved.html">Get Involved</a></li>
-      <li><a href="events.html">Upcoming Events</a></li>
-      <li><a href="Donate.html">Donate</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="Trials_and_Resources.html">Trials and Resources</a></li>
-    </ul>
+    <a href="index.html">Home</a>
+    <a href="get-involved.html">Get Involved</a>
   </nav>
 </header>
 
-<section class="get-involved">
-
+<main>
   <h2>Get Involved</h2>
   <p>
-    There are many meaningful ways to support the Isaac David Porogi Foundation and help children and families facing pediatric cancer.
+    There are many ways to support the Isaac David Porogi Foundation.
+    Please fill out the form below to volunteer, donate, or request more information.
   </p>
 
-  <ul>
-    <li>🎁 Donate small gifts to include in care bags for pediatric cancer patients in the hospital.</li>
-    <li>🎟️ Donate items we can raffle at our fundraising events.</li>
-    <li>🤝 Volunteer to help at or assist with our fundraising events.</li>
-    <li>📣 Help spread awareness by sharing our mission with others.</li>
-  </ul>
+  <!-- FORM ELEMENT -->
+  <form id="involvementForm">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" required>
 
-  <p>
-    Interested in volunteering or donating items?
-  </p>
+    <label for="email">Email Address</label>
+    <input type="email" id="email" required>
 
-  <a href="mailto:isaacdavidporogi@yahoo.com" class="volunteer-button">
-    Email Us to Get Involved
-  </a>
+    <label for="interest">How would you like to get involved?</label>
+    <select id="interest" required>
+      <option value="">-- Select an option --</option>
+      <option value="Volunteer">Volunteer</option>
+      <option value="Donate">Donate</option>
+      <option value="More Information">More Information</option>
+    </select>
 
-</section>
+    <label for="message">Message (optional)</label>
+    <textarea id="message" rows="4"></textarea>
 
-  
+    <button type="submit">Submit</button>
+  </form>
+
+  <p id="responseMessage"></p>
+</main>
+
+<footer>
+  <p>Walkerton, IN 46574 | isaacdavidporogi@yahoo.com</p>
+  <p>&copy; 2026 Isaac David Porogi Foundation</p>
+</footer>
+
+<!-- SCRIPT FOR PROCESSING FORM DATA -->
+<script>
+  document.getElementById("involvementForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+
+    document.getElementById("responseMessage").textContent =
+      "Thank you, " + name + "! We have received your request and will contact you at " + email + ".";
+
+    this.reset();
+  });
+</script>
+
+</body>
+</html>
