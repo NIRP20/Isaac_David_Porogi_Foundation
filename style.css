@@ -29,6 +29,11 @@ ul {
   list-style: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* =====================
    Header
 ===================== */
@@ -58,6 +63,7 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
+  color: #003366;
 }
 
 /* =====================
@@ -95,10 +101,12 @@ nav a:hover {
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
+  transition: all 0.3s ease;
 }
 
 .button:hover {
   background: #093051;
+  color: white;
 }
 
 /* =====================
