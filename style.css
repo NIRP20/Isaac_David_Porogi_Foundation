@@ -332,3 +332,63 @@ footer {
   }
 
 }
+/* Trials and Resources */
+/* Resource List Container */
+
+.resource-list{
+list-style: none;
+padding: 0;
+max-width: 900px;
+margin: 40px auto;
+}
+
+
+/* Individual Resource Card */
+
+.resource-card{
+background: white;
+border-left: 6px solid #2b6cb0;
+padding: 20px;
+margin-bottom: 20px;
+border-radius: 8px;
+box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+/* Hover Effect */
+
+.resource-card:hover{
+transform: translateY(-3px);
+box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+
+/* Resource Title */
+
+.resource-card h3{
+margin-top: 0;
+font-size: 1.4rem;
+}
+
+
+/* Links */
+
+.resource-card a{
+text-decoration: none;
+color: #2b6cb0;
+font-weight: bold;
+}
+
+
+.resource-card a:hover{
+text-decoration: underline;
+}
+
+
+/* Text */
+
+.resource-card p{
+line-height: 1.6;
+color: #333;
+}
