@@ -396,12 +396,17 @@ color: #333;
 
 /* Logo */
 
-.foundation-logo{
-height:120px;   /* bigger logo */
-width:auto;
-cursor:pointer;
-display:block;
-margin:0 0 10px 0; /* left aligned */
+.foundation-logo {
+  width:auto;
+  height: 120px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+  object-fit: contain;
+  display: block;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+  margin:0 0 10px 0;
+  cursor:pointer;
 }
 
 nav a:hover{
