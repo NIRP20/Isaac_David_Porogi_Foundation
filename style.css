@@ -412,6 +412,11 @@ color: #333;
   height: auto;
 }
 
+.logo-circle {
+  margin-top: 15px; /* push the logo down */
+  margin-left: 0;    /* ensure it stays left */
+}
+
 nav a:hover{
 color:#2b6cb0;
 }
