@@ -38,11 +38,11 @@ img {
    Header
 ===================== */
 header {
-  display: flex;
-  align-items: center;   /* all items vertically centered */
+  text-align: center;
   background: yellow;
   padding: 20px 10px;
 }
+
 
 
 header h1 {
