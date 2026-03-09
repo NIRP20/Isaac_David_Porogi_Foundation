@@ -433,3 +433,12 @@ color:#2b6cb0;
 .trials-resources h2 {
   font-size: 2rem;
 }
+
+/* Blog */
+.blog-video {
+  display: block;
+  margin: 30px auto;
+  max-width: 800px;
+  width: 100%;
+  border-radius: 10px;
+}
