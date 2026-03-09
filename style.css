@@ -406,7 +406,6 @@ color: #333;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 30px;   /* move logo down */
   margin-left: 20px;  /* some space from left edge */
 }
 
